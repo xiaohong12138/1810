@@ -65,6 +65,22 @@ public class signClss {
     }
 
 }
+/*********************/
+public class signClss {
+    private static  SignState = null;
+    private signClss(){
+    }
+    public static SignState getSign(){
+        if (SignState==null){
+          synchronized(signClss.class){
+            if (SignState==null){
+                SignState = new SignState();
+             }
+            }
+        }
+    }
+
+}
 /*5555555555555555555555555555555555555
 private static  SignState = null;
     private signClss(){
@@ -77,3 +93,4 @@ private static  SignState = null;
              }
             }
         }
+}
