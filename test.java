@@ -116,3 +116,9 @@ private static  SignState = null;
             if (SignState==null){
                 SignState = new SignState();
              }
+/22222222222222222222222
+f (SignState==null){
+          synchronized(signClss.class){
+            if (SignState==null){
+                SignState = new SignState();
+             }
