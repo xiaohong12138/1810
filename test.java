@@ -107,3 +107,12 @@ private static  SignState = null;
             }
         }
 }
+/*************************
+
+
+    public static SignState getSign(){
+        if (SignState==null){
+          synchronized(signClss.class){
+            if (SignState==null){
+                SignState = new SignState();
+             }
