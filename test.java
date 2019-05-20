@@ -13,6 +13,25 @@ public class signClss {
     }
 
 }
+//Íõ½¨²©
+public class Singleton {
+
+	  private Singleton() {};
+
+	  private static Singleton single ;
+	  
+	  public static Singleton getInstance() {
+	
+		if(null == single){
+			synchronized(single){
+				if(null == single){
+					single = new Singleton();
+				}
+			}
+		}
+		return single;
+	  }
+}}
 
 
 //boryer zhang
