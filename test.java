@@ -35,6 +35,7 @@ public class Singleton {
 
 
 //boryer zhang
+
 public class Singleton(){
 	private Singleton singleton;
 	private Singleton(){};
